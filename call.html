@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HackXX</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+    body {
+      background-color: #16e8e8
+    }
+
+    h2 {
+      color: #8541ba;
+      text-shadow: 2px 2px #EE96EB;
+    }
+
+    .container {
+      width: 100%;
+      padding: 100px;
+      margin: 50px auto;
+      overflow: auto;
+
+    }
+
+    .container h3 {
+      color: #ee96eb;
+      position: absolute;
+      top: 210px;
+      right: 500px;
+    }
+
+    .container video {
+      margin-bottom: 15px;
+      background: #4823A0;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+      padding: 80px 10px 70px;
+      width: 800px
+    }
+
+    .container helper {
+      margin: 0 0 15px;
+    }
+
+
+
+    .play-button {
+      position: absolute;
+      width: 10px;
+      background-color: green;
+      border-radius: 2px;
+      top: 210px;
+      right: 500px;
+    }
+
+    .play-button .btn {
+      position: absolute;
+      top: 540px;
+      right: 340px;
+      width: 45px
+    }
+
+    .logo {
+      position: absolute;
+
+    }
+  </style>
+  <script>
+    var vidcall = document.getElementById("myVideo");
+
+    function playVid() {
+      vidcall.play();
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+
+    <h2 class="text-left">Video Call</h2>
+    <h3 class="text-center">Mike Wilson calling</h3>
+    <div class="helper">
+    </div>
+    <div class="logo">
+      <img src="http://kazemicode.org/hackxx/call%20out.png" width=100px>
+    </div>
+    <video id="myVideo">
+  <source id="mp4_src" src="http://kazemicode.org/hackxx/Diversityhire1edited1.mp4" type="video/mp4" width="400" height="225">
+
+  Your browser does not support the video tag.
+</video>
+    <script>
+      var vid = document.getElementById("myVideo");
+
+      function playVid() {
+        vid.play();
+      }
+
+      function pauseVid() {
+        vid.pause();
+      }
+    </script>
+    <div class="play-button">
+      <button type="button" class="btn btn-success btn-sm" onclick="playVid()"><img src="http://kazemicode.org/hackxx/video_start.png" width=100%></button>
+
+    </div>
+  </div>
+
+  <p class="text-left"><a href="http://hackxx.io">Made for HackXX 2019</a></p>
+  </div>
+
+</body>
+
+</html>
