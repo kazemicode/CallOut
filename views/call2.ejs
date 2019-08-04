@@ -1,0 +1,60 @@
+<% include partials/header %>
+
+ 
+
+  <script>
+    var vidcall = document.getElementById("myVideo");
+
+    function playVid() {
+      vidcall.play();
+    }
+  </script>
+</head>
+
+<body>
+ <% include partials/nav %>
+       <h2 class="text-left">Video Call</h2> 
+  <div class="container">
+
+    
+    
+    
+    <div class="logo">
+      <img src="/img/call%20out.png" width=100px>
+      <h3 class="text-center">Big Boss calling...</h3>
+    </div>
+      <video id="myVideo">
+        
+  <source id="mov_src" src="/media/Scenario2.mov" type="video/mp4" width="400" height="225">
+
+  Your browser does not support the video tag.
+</video>
+    <button type="button" class="btn btn-success btn-sm" onclick="playVid()"><img src="/img/video_start.png" width="45px"></button>
+    <script>
+      var vid = document.getElementById("myVideo");
+
+      function playVid() {
+        vid.play();
+      }
+
+      function pauseVid() {
+        vid.pause();
+      }
+    </script>
+      
+
+  </div>
+
+
+<div id="helper">
+       <h2>Hints</h2>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Try these responses</button>
+  <div id="demo" class="collapse">
+    Going back to what you said about how I should dress: this is a good time to talk about workplace boundaries. To be clear: my body and appearance are not for you to comment on or to use to gain and wow clientelle. I feel it is appropriate that I step out to speak with HR about this because I feel unsafe. Perhaps this is an opportune time to think about how your words affect people.
+  </div>
+
+
+</body>
+
+</html>
+

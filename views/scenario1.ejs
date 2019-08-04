@@ -1,0 +1,39 @@
+<script>
+    var vidcall = document.getElementById("myVideo");
+
+    function playVid() {
+      vidcall.play();
+    }
+  </script>
+<% include partials/header %>
+<style>
+  .background-image{
+    background-image: url("/img/scene1.jpg");
+  }
+</style>
+</head>
+
+<body>
+ <% include partials/nav %>
+        
+<div class="background-image">
+  <div class="all-text">
+    <h1 style="font-size:40px; color:black;"> <b>CO-WORKER TALK </b></h1>
+    <p align="center" style="color:black;font-size:20px;">Description: You are about to receive a call from your coworker for a newly assigned project. This is the first time you're meeting, but… He does not seem to be very respectful. What will you do? </p>
+    <button align="center">
+      <a href="call">
+       <h3>Start Call</h3>
+      </a>
+    </button>
+    </br>
+  </br>
+  </div>
+    
+</div>
+        
+ 
+  </div>
+
+</body>
+
+</html>
