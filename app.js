@@ -54,7 +54,7 @@ app.get("/call2", function(req, res){
 
 
 // Listeners
-app.listen(process.env.PORT||port, process.env.IP||ip, function() {
+app.listen(process.env.PORT, process.env.IP, function() {
   console.log(`Running Express Server on ${ip}:${port}`);
 });
 
